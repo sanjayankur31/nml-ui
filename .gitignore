@@ -1,0 +1,22 @@
+# All the python compiled
+*.pyc
+*.py~
+*.*~
+*.*#
+*~
+*.csv
+
+.project
+.pydevproject
+.idea
+*.egg-info
+MANIFEST
+dist/*
+build
+
+#Sphinx built website.
+doc/_build
+
+.venv
+/data
+.mypy_cache/

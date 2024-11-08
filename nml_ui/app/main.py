@@ -11,6 +11,7 @@ Author: Ankur Sinha <sanjay DOT ankur AT gmail DOT com>
 
 import sys
 import logging
+import webbrowser
 from neuroml.utils import component_factory
 from pyneuroml.io import read_neuroml2_file
 from tkinter import filedialog
@@ -61,3 +62,13 @@ def file_exit_callback(app):
         # TODO: add a confirmation dialog
 
     sys.exit(0)
+
+
+def help_docs_callback(app):
+    """Open docs in a browser. """
+    webbrowser.open("https://docs.neuroml.org")
+
+
+def help_chat_callback(app):
+    """Open docs in a browser. """
+    webbrowser.open("https://matrix.to/#/!EQLdKYsJxEfGHAybdP:gitter.im?via=gitter.im&amp;via=matrix.org")
